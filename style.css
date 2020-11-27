@@ -1,0 +1,52 @@
+*{ /*aplicará a todo lo que sea html*/
+    margin: 100; /*margen*/
+    padding: 0;
+}
+
+html, body{
+    
+    left: 0%;
+    top: 0%;
+    height: 98%; /*alto*/
+    width: 98.9%; /*ancho*/
+    background-color: darkslategray; /*COLOR DEL FONDO PRINCIPAL*/
+
+}
+
+.contenedor{
+    text-align: center;
+}
+
+.login{
+    position: relative;
+    height: 430px;
+    width: 500px;
+    top: 140px;
+    left: 500px;
+
+    
+    text-align: center;
+    
+    background-color: beige;
+    border-radius: 12px;
+}
+
+
+.texto{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 18px;
+    color: saddlebrown;
+}
+.elementos{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 18px;
+    height: 30px;
+    width: 300px;
+    border-radius: 5px;
+    border-style: hidden;
+    background-color:white;
+    
+}
+
+
+

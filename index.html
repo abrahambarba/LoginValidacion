@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+
+</head>
+<body background="h.png">
+    
+    <div class="contenedor">
+        <H1><B>HALO INFINITE</B></H1>
+        <div class="login texto">
+            <h1>¡Bienvenido SPARTAN!</h1>
+            <h2>Nombre:</h2>
+            <input class="elementos" type="nombre" id="nom" placeholder="Nombre">
+            <h2>Correo:</h2>
+            <input class="elementos" type="correo" id="cor" placeholder="ejemplo@ejemplo.com">
+
+            
+            <h2>Contraseña:</h2>
+            <input class="elementos" id="con" type="text" placeholder=""> 
+
+
+            <!-- BOTÓN COLORES 
+
+            <h2>Seleeciona un color</h2>
+            <input class="elementos" type="color" id="con"> -->
+
+
+
+            <!--BOTÓN PARA VALIDAR DATOS-->
+            <br><br>
+            <button class="elementos" onclick="obtener()">Obtener Datos</button>  <!--LLAMAMOS A LA FUNCIÓN obtener()-->
+
+        </div>
+    </div>
+
+
+</body>
+
+
+
+<!--FUNCIONESSS    <!    -->
+<script>
+        function obtener(){ //función
+        
+        //INICIAMOS VARIABLES QUE ALMACENARÁN DATOSA
+        usuarios="abraham";
+        correos="abraham_h421@hotmail.com";
+        contra="asies";
+
+
+        //GUARDAMOS LOS DATOS INGRESADOS EN UNA VARIABLE
+        n=document.querySelector("#nom").value; //para imprimir datos     #nom es usado porque se menciona en el ID de arrbia en el HTML
+        c=(document.querySelector("#cor").value);
+        con=(document.querySelector("#con").value);
+        //col=(document.querySelector("#col").value);
+
+
+        if(n==usuarios){
+            if(c==correos){
+                if(con==contra){
+                    alert("¡DATOS CORRECTOS! c:"); //ALERTA con el letrero de google
+                }else{
+                    alert("Los datos son incorrectos");
+                }
+            }else{
+                alert("Uno de los datos es incorrecto ");
+            }
+        }else{
+            alert("Datos Incorrectos!!!");
+        }
+            
+
+    }
+
+
+</script>
+
+</html>
